@@ -11,6 +11,7 @@ def draw(d, ilosc):
     for i in range(3):
         t.forward(d/4)
         t.forward(3 * d / 4)
+        draw(d/2, ilosc-1)
         t.right(120)
 
 
