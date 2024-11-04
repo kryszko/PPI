@@ -10,7 +10,7 @@ def draw(d, ilosc):
         return
     for i in range(3):
         t.forward(d/2)
-        if i == 1:
+        if i == 0:
             t.right(60)
             draw(d/2, ilosc -1)
             t.left(60)
@@ -19,5 +19,5 @@ def draw(d, ilosc):
 
 
 t.left(60)
-draw(100, 3)
+draw(100, 1)
 turtle.done()
