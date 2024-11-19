@@ -1,7 +1,7 @@
 from threading import Semaphore, Thread
 import time
 
-semA = Semaphore(0)
+semA = Semaphore(1)
 semB = Semaphore(0)
 semC = Semaphore(0)
 
@@ -11,27 +11,23 @@ def printA(ntimes):
         semA.acquire()
         print('A ', end="")
         time.sleep(1)
+        semC.release()
+        semA.acquire()
         semB.release()
 
 def printB(ntimes):
     for i in range(ntimes):
-        semA.release()
-        semB.acquire()
-        semC.release()
         semB.acquire()
         print('B ', end="")
         time.sleep(1)
         semA.release()
-        semB.acquire()
-        semC.release()
-        semB.acquire()
 
 def printC(ntimes):
     for i in range(ntimes):
         semC.acquire()
         print('C ', end="")
         time.sleep(1)
-        semB.release()
+        semA.release()
 
 how_many = 2
 threads = []
