@@ -9,12 +9,15 @@ C: int = 3
 #semNONAME = Semaphore(0)
 #...
 
+sem = Semaphore(0)
+
 def threadP1():
 
 
     global A
     global B
     global C
+    sem.acquire()
     A = 10
     B = B + 5
     C = C + A
@@ -34,8 +37,10 @@ def threadP3():
     global A
     global B
     global C
+
     C = B + 10
     A = 2 * A
+    sem.acquire()
     B = B + A
     print("Thread P3 is done...")
 
@@ -46,6 +51,7 @@ def threadP4():
     global C
     print("Sum result: ",A," + ",B," + ",C," = ",(A + B + C))
     print("Thread P4 is done...")
+    sem.release(3)
 
 threads = []
 threads.append(Thread(target=threadP1))
