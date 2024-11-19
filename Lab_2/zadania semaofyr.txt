@@ -1,0 +1,9 @@
+zad 1
+    BCBA
+
+zad 2
+    ACBAC
+
+zad 3
+    22
+    36
