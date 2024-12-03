@@ -1,0 +1,33 @@
+Zadanie a)
+
+Treść przesyłu: (Ak) -> (L)
+Przykładowe wartości początkowe: (Ak) = (5) = 3    (L) = (2) = 22
+Aktywne sygnały sterujące:
+	1. wyak sa wea
+	//(Ak)->A; przeniesie 5 do A	
+	2. czyt wyl wea
+	//(A)->S, (L)->A; przepisanie zawartości (5) do S, przeniesie 2 z L do A
+	3. pisz
+	//przypisanie wartości 3 do (2), 22->3
+
+
+
+Zadanie b)
+
+Treść przesyłu: (0) + (1) -> (Ad)
+Przykładowe wartości początkowe: (Ad) = (7)   (0) = 4    (1) = 6    10 => (7)
+Aktywne sygnały sterujące: 
+	1. wyak weja ode weak 
+	// (AK) – (AK) -> AK, zerowanie akumulatora, robimy wartość 0
+	2. wyak sa wea wel 
+	// (AK) - > A, L zatem (A),(L) = 0; 0 do resejtru a i licznika (zakładając że może być tam coś innego)
+	3. czyt wys weja przep weak il
+	// (A) -> AK, inkrementacja licznika, zatem L = 1, Ak = 4
+	4. wyl wea
+	// (L) -> A, zatem A = (1) = 6
+	5. czyt wys weja dod weak
+	// Ak + (A) -> Ak, zatem (1) = 6, 6+4=10
+	6. wyad wyak wea wes
+	// Ak -> S, Ad -> A; przygotowanie komórki 7 i wartości 10
+	7. pisz
+	// S -> (A)  10 -> (7) 
