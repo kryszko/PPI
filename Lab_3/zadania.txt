@@ -1,0 +1,30 @@
+zad 1 
+a) (Ak) -> (L)
+(Ak) = (5) = 3    (L) = (2) = 22
+(5)->(2)
+3->22
+
+wyak sa(wei wyad?) wea czyt
+wyl wea pisz
+
+
+b) (0) + (1) -> (Ad)
+
+(Ad) = (7)   (0) = 4    (1) = 6    10 => (7)
+
+wyak weja ode weak //zerowanie akumulatora, robimy wartość 0
+
+wyak sa wea wel // 0 do resejtru a i licznuka (zakładając że może być tam coś innego)
+
+czyt wys weja przep weak il
+
+wyl wea
+
+wyad czyt wys weja dod weak
+
+wyad wyak wea wes
+
+pisz
+
+
+
