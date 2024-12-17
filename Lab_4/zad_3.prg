@@ -1,5 +1,6 @@
-        POB zero
+        POB n
         ŁAD i
+        
         
 petla:  POB i
         ODE jeden
@@ -19,7 +20,7 @@ kwadrat:  POB zero
           PZS
           ŁAD liczba
           ŁAD j
-kw_petla: SOZ kw_koniec
+kw_petla: SOM kw_koniec
           ŁAD j
           POB suma_kw
           DOD liczba
