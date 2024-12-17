@@ -1,19 +1,19 @@
-        POB n
-        ŁAD i
+          POB n
+          ŁAD i
         
         
-petla:  POB i
-        ODE jeden
-        SOM koniec    
-        ŁAD i
-        DNS
-        SDP kwadrat
-        PZS
-        DOD suma
-        ŁAD SUMA
-        SOB petla
-koniec: POB suma
-        STP
+petla:    POB i
+          ODE jeden
+          SOM koniec    
+          ŁAD i
+          DNS
+          SDP kwadrat
+          PZS
+          DOD suma
+          ŁAD SUMA
+          SOB petla
+koniec:   POB suma
+          STP
         
 kwadrat:  POB zero
           ŁAD suma_kw
