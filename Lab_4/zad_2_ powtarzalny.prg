@@ -22,13 +22,6 @@ loop: POB i		//głowny program
       SOB loop
  end: POB ilo
       STP      
-
-Tab: RST 13		//tablica 
-     RST 11
-     RST 3
-     RST 10
-     RST 127
-     RST 128
   
   A: RST  10		// zmienne i backup
 ilo: RST 0
@@ -37,3 +30,10 @@ st1: RST 1
   n: RST 6
   i: RST 0
 kop: ODE TAB   
+
+Tab: RST 13		//tablica 
+     RST 11
+     RST 3
+     RST 10
+     RST 127
+     RST 128

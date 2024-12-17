@@ -15,13 +15,15 @@ loop: POB n
  end: POB ilo
       STP      
 
+
+  A: RST  10
+ilo: RST 0
+raz: RST 1
+  n: RST 6 
+
 Tab: RST 13
      RST 11
      RST 3
      RST 10
      RST 127
-     RST 128
-  A: RST  10
-ilo: RST 0
-raz: RST 1
-  n: RST 6   
+     RST 128  
