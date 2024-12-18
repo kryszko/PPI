@@ -1,0 +1,40 @@
+      POB n		//przywrócenie ustawień frabrycznych
+      ŁAD i
+      POB st0
+      ŁAD ilo
+      POB kop
+      ŁAD spr
+
+
+loop: POB i		//głowny program
+      ODE st1
+      ŁAD i
+      SOM end
+      POB A
+ spr: ODE TAB
+      SOM hop
+      POB ilo
+      DOD st1
+      ŁAD ilo
+ hop: POB spr
+      DOD st1
+      ŁAD spr
+      SOB loop
+ end: POB ilo
+      STP      
+  
+  A: RST  10		// zmienne i backup
+ilo: RST 0
+st0: RST 0
+st1: RST 1
+  n: RST 4
+  i: RST 0
+kop: ODE TAB   
+
+Tab: RST 5		//tablica 
+     RST 12
+     RST 5
+     RST 3
+     RST 55
+     RST 1
+     RST 23
