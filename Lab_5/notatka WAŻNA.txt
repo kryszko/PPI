@@ -1,0 +1,2 @@
+wgrac liste rozkazów
+zmienić te bity adresu na 8 dla bezpieczeństwa 
