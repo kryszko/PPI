@@ -1,4 +1,6 @@
         pob zero
+        ład c_licznik
+        ład d_licznik
         ład licznik
         ład spr_i
         ład rozmiar
