@@ -1,0 +1,8 @@
+// wypisanie znaku znajdującego się w akumulatorze na UZ o numerze podanym jako argument rozkazu
+ROZKAZ WYP;
+czyt wys wei il;
+wyak weja ode weak wes werb start;
+@czekaj wyg weja ode weak JEŻELI Z to @dalej GDY NIE @czekaj;
+@dalej wys weja przep weak wyl wea;
+
+

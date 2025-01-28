@@ -1,0 +1,81 @@
+        SOB ROGRAM
+        SOB PRZERW1
+        SOB PRZERW2
+        SOB PRZERW3
+        SOB PRZERW4
+
+ROGRAM:     POB dycha
+            ŁAD i
+            ŁAD j
+        
+PETLA1:     POB i
+            ODE jeden
+            ŁAD i
+            POB dycha
+            ŁAD j
+PETLA2:     POB j
+            ODE jeden
+            ŁAD j
+            POB hasz
+            WYP 2
+            POB j
+            SOZ KONIEC2
+            SOB PETLA2
+KONIEC2:    POB ENTER
+            WYP 2
+            POB i
+            SOZ KONIEC1
+            SOB PETLA1
+
+KONIEC1:    STP                                    
+        
+PRZERW1:    CZM maska
+            MAS 15
+            DNS
+            POB znak1
+            WYP 2
+            PZS
+            MSK maska
+            PWR
+
+PRZERW2:    CZM maska
+            MAS 15
+            DNS
+            POB znak2
+            WYP 2
+            PZS
+            MSK maska
+            PWR    
+
+PRZERW3:    CZM maska
+            MAS 15
+            DNS
+            POB znak3
+            WYP 2
+            PZS
+            PZS
+            MSK maska
+            STP
+
+
+PRZERW4:    CZM maska
+            MAS 15
+            DNS
+            POB znak4
+            WYP 2
+            PZS
+            MSK maska
+            PWR
+         
+        
+dycha: RST 10
+jeden: RST 1
+hasz: RST 35
+enter: RST 10
+i: RPA
+j: RPA 
+maska: RPA
+znak1: RST 49
+znak2: RST 50
+znak3: RST 51
+znak4: RST 52                            

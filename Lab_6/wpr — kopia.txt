@@ -1,0 +1,7 @@
+// wczytanie znaku z UZ o numerze podanym jako argument rozkazu
+ROZKAZ WPR;
+czyt wys wei il;
+start wyak weja ode weak;
+@czekaj wyg weja ode weak JEŻELI Z to @dalej GDY NIE @czekaj;
+@dalej wyrb weja przep weak wyl wea;
+
