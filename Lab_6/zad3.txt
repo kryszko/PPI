@@ -1,0 +1,162 @@
+             SOB ROGRAM
+             SOB PRZERW1
+             SOB PRZERW2
+             SOB PRZERW3
+             SOB PRZERW4
+ 
+ROGRAM:      POB minus1
+             DNS
+             POB zero
+             ŁAD lp_1
+             ŁAD lp_2
+             ŁAD lp_3
+             ŁAD lp_4
+
+PETLA:       POB hasz
+             WYP 2
+             SOB PETLA      
+ 
+PRZERW1:     CZM maska
+             MAS 15
+             DNS
+             
+             POB i1
+             ŁAD i
+PETLA1:      ODE jeden
+             ŁAD i
+             POB znak1
+             wyp 2
+             POB i
+             SOZ END1
+             SOB PETLA1
+             
+             //inkrementacja licznika przerwania
+END1:        POB lp_1
+             DOD jeden
+             ŁAD lp_1
+             ODE dwa
+             SOZ KONIEC
+             
+             
+             PZS
+             MSK maska
+             PWR
+
+PRZERW2:     CZM maska
+             MAS 7
+             DNS
+             
+             POB i2
+             ŁAD i
+PETLA2:      ODE jeden
+             ŁAD i
+             POB znak2
+             wyp 2
+             POB i
+             SOZ END2
+             SOB PETLA2
+             
+             //inkrementacja licznika przerwania
+END2:        POB lp_2
+             DOD jeden
+             ŁAD lp_2
+             ODE cztery
+             SOZ KONIEC
+             
+             
+             PZS
+             MSK maska
+             PWR
+             
+PRZERW3:     CZM maska
+             MAS 3
+             DNS
+             
+             POB i3
+             ŁAD i
+PETLA3:      ODE jeden
+             ŁAD i
+             POB znak3
+             wyp 2
+             POB i
+             SOZ END3
+             SOB PETLA3
+ 
+ 
+             
+             //inkrementacja licznika przerwania
+END3:        POB lp_3
+             DOD jeden
+             ŁAD lp_3
+             ODE szesc
+             SOZ KONIEC
+             
+             
+             PZS
+             MSK maska
+             PWR
+
+PRZERW4:     CZM maska
+             MAS 1
+             DNS
+             
+             POB i4
+             ŁAD i
+PETLA4:      ODE jeden
+             ŁAD i
+             POB znak4
+             wyp 2
+             POB i
+             SOZ END4
+             SOB PETLA4
+             
+             //inkrementacja licznika przerwania
+END4:        POB lp_4
+             DOD jeden
+             ŁAD lp_4
+             ODE osiem
+             SOZ KONIEC
+             
+             
+             PZS
+             MSK maska
+             PWR   
+
+KONIEC:      PZS
+             SOM KONIECKONCA
+             SOB KONIEC
+
+KONIECKONCA: MSK 0
+             STP             
+             
+maska: RPA  
+hasz: RST 35
+
+minus1: RST -1
+zero: RST 0
+jeden: RST 1
+dwa: RST 2
+cztery: RST 4
+szesc: RST 6
+osiem: RST 8
+
+
+//licznikprzerwań
+lp_1: RST 0
+lp_2: RST 0
+lp_3: RST 0
+lp_4: RST 0
+
+//zapisane liczby do wypisywania
+znak1: RST 49
+znak2: RST 50
+znak3: RST 51
+znak4: RST 52
+
+//liczniki petli wypisywania
+i1: RST 3
+i2: RST 6
+i3: RST 9
+i4: RST 12
+i: RPA
+                                    
