@@ -4,7 +4,7 @@
              SOB PRZERW3
              SOB PRZERW4
  
-ROGRAM:      POB minus1
+ROGRAM:      POB zero
              DNS
              POB zero
              ŁAD lp_1
@@ -123,7 +123,7 @@ END4:        POB lp_4
              PWR   
 
 KONIEC:      PZS
-             SOM KONIECKONCA
+             SOZ KONIECKONCA
              SOB KONIEC
 
 KONIECKONCA: MAS 0
