@@ -16,7 +16,7 @@ PETLA:       POB hasz
              WYP 2
              SOB PETLA      
  
-PRZERW1:     CZM maska
+PRZERW1:     CZM maska1
              MAS 15
              DNS
              
@@ -39,10 +39,10 @@ END1:        POB lp_1
              
              
              PZS
-             MSK maska
+             MSK maska1
              PWR
 
-PRZERW2:     CZM maska
+PRZERW2:     CZM maska2
              MAS 7
              DNS
              
@@ -65,10 +65,10 @@ END2:        POB lp_2
              
              
              PZS
-             MSK maska
+             MSK maska2
              PWR
              
-PRZERW3:     CZM maska
+PRZERW3:     CZM maska3
              MAS 3
              DNS
              
@@ -93,10 +93,10 @@ END3:        POB lp_3
              
              
              PZS
-             MSK maska
+             MSK maska3
              PWR
 
-PRZERW4:     CZM maska
+PRZERW4:     CZM maska4
              MAS 1
              DNS
              
@@ -119,17 +119,20 @@ END4:        POB lp_4
              
              
              PZS
-             MSK maska
+             MSK maska4
              PWR   
 
 KONIEC:      PZS
              SOM KONIECKONCA
              SOB KONIEC
 
-KONIECKONCA: MSK 0
+KONIECKONCA: MAS 0
              STP             
              
-maska: RPA  
+maska1: RPA 
+maska2: RPA
+maska3: RPA
+maska4: RPA 
 hasz: RST 35
 
 minus1: RST -1
